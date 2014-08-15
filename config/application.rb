@@ -6,8 +6,22 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Sfpourhouse7
+module Sfpourhouse1
   class Application < Rails::Application
+
+    config.action_mailer.smtp_settings = {
+      :address              => "box347.bluehost.com",
+      :port                 => 587,
+      :domain               => "sfpourhouse.com",
+      :user_name            => "events@sfpourhouse.com",
+      :password             => "events123!",
+      :authentication       => :plain,
+      :enable_starttls_auto => true
+    }
+
+    config.action_mailer.default_url_options = {
+      :host => "www.sfpourhouse.com"
+    }
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
