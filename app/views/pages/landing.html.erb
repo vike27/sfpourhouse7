@@ -1,3 +1,5 @@
+
+
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -45,4 +47,79 @@
 <div class="container">
 
 
-  This is landing page
+
+  <div class="middle-container">
+    <h1>Pourhouse is a wine bar in the heart of San Francisco's renown Polk Street</h1>
+      <p>A culture that promises some bodacious brews, delicious wine, fabulous foods and a supreme wine-bar experience.</p>
+  </div>
+
+
+
+
+<div class="row index-row">
+
+    <div class="col-sm-4">
+        <div class="media">
+            <div class="row ">
+                <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+                    <div class="img-overlay "> 
+                        <%= link_to asset_path("Menu.pdf"), :class => "btn btn-primary" do %> Open <% end %> 
+                    </div>
+
+                    <%= image_tag('pic1.JPG', class: 'pull-left media-img', alt: 'About') %>
+                </div>
+
+                <div class="media-body   col-sm-7 col-md-8  ">
+                    <%= link_to asset_path("Menu.pdf") do%> <h4 class="media-heading"> Menu </h4> <% end %>
+                    <p class="hidden-sm">Bodacious brews, delicious wine & fabulous food</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-4">
+        <div class="media">
+            <div class="row ">
+                <div class="media-img pull-left   col-sm-5 col-md-4 ">
+                    <div class="img-overlay  "> 
+                        <a class="btn  btn-primary  animated fadeInUp needsclick" href="/contacts" rel="bookmark">Open</a> 
+                    </div>
+
+                    <%= image_tag('pic2.JPG', class: 'media-img', alt: 'Portfolio') %>
+                </div>
+                <div class="media-body   col-sm-7  col-md-8 ">
+                    <h4 class="media-heading"> <%= link_to 'Host an Event', contacts_path, class: 'media-heading' %></h4>
+                    <p class="hidden-sm">Private Event Space in the heart of the city</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-4">
+        <div class="media">
+            <div class="row ">
+                <div class="media-img  pull-left   col-sm-5 col-md-4 ">
+                    <div class="img-overlay "> 
+                        <a class="btn  btn-primary  animated fadeInUp needsclick" href="/gallery" rel="bookmark">Open</a> 
+                    </div>
+
+                    <%= image_tag('pic3.JPG', class: 'media-img', alt: 'Contacts', type: 'button') %>                                        
+                </div>
+
+                <div class="media-body  col-sm-7 col-md-8 ">
+                    <h4 class="media-heading"><%= link_to 'Gallery', gallery_path, class: 'media-heading' %></h4>
+                    <p class="hidden-sm">A superb wine-bar experience in San Francisco</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div> 
+
+
+
+
+</div>
+
+
+</div>
