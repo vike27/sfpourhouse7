@@ -11,15 +11,27 @@
         <%= form.label :email, class: "labels-contact" %>
         <%= form.text_field :email, class: "form-control" %>
       </div>
+
       <div class= "form-group">
-        <%= form.label :subject, class: "labels-contact" %>
-        <%= form.text_field :subject, class: "form-control" %>
+        <%= form.label :desired_date, class: "labels-contact" %>
+        <%= form.date_field :date, class: "form-control" %>
+      </div>
+
+      <div class= "form-group">
+        <%= form.label :number_of_people, class: "labels-contact" %>
+        <%= form.number_field :number_of_people, class: "form-control" %>
+      </div>
+
+      <div class= "form-group">
+        <%= form.label :type_of_event, class: "labels-contact" %>
+        <%= form.text_field :type, class: "form-control" %>
       </div>
       
       <div class= "form-group">
-        <%= form.label :body, class: "labels-contact" %>
+        <%= form.label :details, class: "labels-contact" %>
         <%= form.text_area :body, class: "form-control", id: "body-text" %>
       </div>
+
     </div>
     </br>
     <div class="form-actions">
