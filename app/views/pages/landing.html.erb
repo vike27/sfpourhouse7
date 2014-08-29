@@ -67,14 +67,15 @@
             <div class="row ">
                 <div class="media-img  pull-left  col-sm-5  col-md-4 ">
                     <div class="img-overlay "> 
-                        <%= link_to asset_path("Menu.pdf"), :class => "btn btn-primary" do %> Open <% end %> 
+                      <a class="btn  btn-primary  animated fadeInUp needsclick" href="https://s3-us-west-1.amazonaws.com/sfpourhouse1/Menu.pdf" rel="bookmark">Open</a>
+                      
                     </div>
                     <img src="https://s3-us-west-1.amazonaws.com/sfpourhouse1/pic14.JPG", class="img-responsive", alt="some_text">
                     
                 </div>
 
                 <div class="media-body   col-sm-7 col-md-8  ">
-                    <%= link_to asset_path("Menu.pdf") do%> <h4 class="media-heading"> Menu </h4> <% end %>
+                    <%= link_to "https://s3-us-west-1.amazonaws.com/sfpourhouse1/Menu.pdf" do%> <h4 class="media-heading"%> Menu </h4> <% end %>
                     <p class="hidden-sm">Bodacious brews, delicious wine & fabulous food</p>
                 </div>
             </div>
