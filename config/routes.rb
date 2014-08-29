@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   match '/home',    to: 'pages#home',    via: 'get'
   match '/about',   to: 'pages#about',     via: 'get'
   match '/gallery',   to: 'pages#gallery',   via: 'get'
+  
   match '/events',   to: 'pages#events',   via: 'get'
   match '/menu',   to: 'pages#menu',   via: 'get'
   match '/testing',   to: 'pages#testing',   via: 'get'
@@ -12,6 +13,8 @@ Rails.application.routes.draw do
   resources "contacts", only: [:new, :create]
   match '/events',   to: 'pages#mevents',   via: 'get'
   resources "events", only: [:new, :create]
+
+  resources :photos
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

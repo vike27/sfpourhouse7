@@ -6,6 +6,8 @@ gem 'rails', '4.1.1'
 # Use sqlite3 as the database for Active Record
 gem 'bootstrap-sass', '~> 3.1.1'
 
+gem 'dragonfly', "~>1.0.6"
+
 # Use sqlite3 as the database for Active Record
 group :development do
 	gem 'sqlite3'
