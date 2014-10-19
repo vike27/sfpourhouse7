@@ -432,102 +432,30 @@ body {
 }
 
 
-/*** gallery ***/
-
-
-.contest-index-container {
-	margin-top: 100px;
-}
-
-#masonry-container {
-    margin: 0 auto;
-}
-
-.col3 {
-    width: 300px;
-}
-
-.contest-paginate {
-	text-align: center;
-	margin-top: 30px;
-	margin-bottom: 50px;
-}
-
-.col3 img { 
-	max-width: 100% 
-}
-
-
-/*** contact form ***/
-
-.hidden { display: none; }
-
-/*flash*/
-
-.alert-error {
-background-color: #f2dede;
-border-color: #eed3d7;
-color: #b94a48;
-text-align: left;
-}
-
-.alert-alert {
-background-color: #f2dede;
-border-color: #eed3d7;
-color: #b94a48;
-text-align: left;
-}
-
-.alert-success {
-background-color: #dff0d8;
-border-color: #d6e9c6;
-color: #468847;
-text-align: left;
-}
-
-.alert-notice {
-background-color: #dff0d8;
-border-color: #d6e9c6;
-color: #468847;
-text-align: left;
-}
-
-/*** contact us form ****/
-
-.contact-us-form {
-	margin-top: 250px;
-	width: 300px;
-	text-align:center; 
-	margin: 0 auto;
-	padding-top: 100px;
-	padding-bottom: 30px;
-}
-
-#body-text {
-	height: 200px;
-}
-
-.labels-contact {
-	color: white;
-}
 
 
 /*** gallery ***/
 
 .gallery-container {
-	height: 500px;
 	color: white;
+	background-color: black;
+	padding-top: 80px;
+	padding-bottom: 20px;
 }
 
 .gallery-coming-soon {
-	margin-top: 250px;
-	width: 300px;
 	text-align:center; 
-	margin: 0 auto;
+	margin: 200 auto;
 	color: white;
-	padding-top: 300px;
-	font-family: 'Lobster', cursive;
-	font-size: 20px;
+	padding-top: 40px;
+}
+
+.picbox {
+	padding-bottom: 40px;
+}
+
+.picbox a img {
+	box-shadow: 10px 10px 5px #888888; 
 }
 
 /*** carousel ***/
@@ -538,3 +466,15 @@ text-align: left;
     -o-transition: 0.6s ease-in-out left;
     transition: 0.6s ease-in-out left;
 }
+
+
+/*** contact ***/
+
+.contact-us-form {
+	margin: 0 auto; 
+	width: 300px;
+	color: white;
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
